@@ -1,0 +1,33 @@
+.tour-header {
+  margin: auto;
+  text-align: center;
+}
+
+.tours-card {
+  background-color: #fff;
+  margin: 40px auto;
+  padding: 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tour-info {
+  margin: 0;
+}
+
+.readmore {
+  border: none;
+  background-color: #fff;
+  color: #0000ff;
+  cursor: pointer;
+}
+
+.not-interested {
+  background-color: #808080;
+  color: #fff;
+  border: 1px solid #808080;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
