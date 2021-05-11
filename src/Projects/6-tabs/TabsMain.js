@@ -4,7 +4,7 @@ const url = "https://course-api.com/react-tabs-project";
 
 
 function TabsMain() {
-    const [ loading, setLoading ] = useState(false);
+    const [ loading, setLoading ] = useState(true);
     const [ jobs, setJobs ] = useState([]);
     const [ value, setValue ] = useState(0);
 
@@ -23,18 +23,19 @@ function TabsMain() {
     if(loading) {
         return <div>Loading...</div>
     }
+    console.log(jobs, "jobs")
     const {  title, dates, duties, company } = jobs[value];
     return (
-        <div className="tabs-detail-container">
-            <h1>Experience</h1>
-            <div>
-                <div>
+        <div>
+            <h1 className="tabs-header">Experience</h1>
+            <div className="tabs-container">
+                <div className="tabs-button">
                     {jobs.map((job, index) => {
                         return <button onClick={() => {setValue(index)}} key={index} className={`tab-button ${index === value && 'active-button'}`}>{job.company}</button>
                     })}
                 </div>
                 <div>
-                    <h4>{title}</h4>
+                    <h3>{title}</h3>
                     <h5>{company}</h5>
                     <h5>{dates}</h5>
                     <ul>
