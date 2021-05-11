@@ -1,0 +1,34 @@
+.questions-container {
+  background-color: #fff;
+  margin: 40px auto;
+  padding: 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.question-header {
+  margin: auto;
+  text-align: center;
+}
+
+.question-container {
+  box-shadow: 0 16px 20px 5px rgba(5, 27, 44, 0.3);
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.question-card {
+  display: flex;
+}
+
+.showhide-button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.showhide-icon {
+  color: #0000ff;
+}

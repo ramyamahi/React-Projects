@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch, NavLink } from "react-router-do
 import Birthday from "./Projects/1-birthday-reminder/Birthday";
 import ToursMain from "./Projects/2-tours/ToursMain";
 import ReviewsMain from "./Projects/3-Reviews/ReviewsMain";
+import QuestionsMain from "./Projects/4-Questions/QuestionsMain";
 
 class App extends Component {
   state = {    
@@ -21,7 +22,10 @@ class App extends Component {
               <NavLink to="/ToursMain">Our Tours</NavLink>
             </li> 
             <li>
-              <NavLink to="ReviewsMain">Our Reviews</NavLink>
+              <NavLink to="/ReviewsMain">Our Reviews</NavLink>
+            </li>
+            <li>
+              <NavLink to="/QuestionsMain">Questions & Answers</NavLink>
             </li>
           </ul>
           <hr/>
@@ -29,7 +33,8 @@ class App extends Component {
             <Route exact path="/" />
             <Route exact path="/Birthday" component={Birthday} /> 
             <Route exact path="/ToursMain" component={ToursMain} /> 
-            <Route exact path="/ReviewsMain" component={ReviewsMain} />           
+            <Route exact path="/ReviewsMain" component={ReviewsMain} />  
+            <Route exact path="/QuestionsMain" component={QuestionsMain} />         
           </Switch>
         </div>
       </Router>
