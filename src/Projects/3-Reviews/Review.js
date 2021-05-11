@@ -30,6 +30,14 @@ const Review = () => {
         })
     }
 
+    const randomPerson = () => {
+        let randomNumber = Math.floor(Math.random() * people.length);
+        if(randomNumber === index){
+            randomNumber = index + 1;
+        }
+        setIndex((checkNumber(randomNumber)));
+    }
+
     return (
         <div className="review-card">
             <img src={image} alt={name} className="people-profile"/>
@@ -40,6 +48,7 @@ const Review = () => {
                 <button onClick={navigateLeft} className="navigate-icon"><AiOutlineLeft /></button>
                 <button onClick={navigateRight} className="navigate-icon"><AiOutlineRight /></button>
             </div>
+            <button onClick={randomPerson} className="surprise-me">Surprise Me</button>
         </div>
     )
 }
