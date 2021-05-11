@@ -5,6 +5,7 @@ import Birthday from "./Projects/1-birthday-reminder/Birthday";
 import ToursMain from "./Projects/2-tours/ToursMain";
 import ReviewsMain from "./Projects/3-Reviews/ReviewsMain";
 import QuestionsMain from "./Projects/4-Questions/QuestionsMain";
+import MenuMain from "./Projects/5-menu/MenuMain";
 
 class App extends Component {
   state = {    
@@ -27,6 +28,9 @@ class App extends Component {
             <li>
               <NavLink to="/QuestionsMain">Questions & Answers</NavLink>
             </li>
+            <li>
+              <NavLink to="/MenuMain">Our Menu</NavLink>
+            </li>
           </ul>
           <hr/>
           <Switch>
@@ -34,7 +38,8 @@ class App extends Component {
             <Route exact path="/Birthday" component={Birthday} /> 
             <Route exact path="/ToursMain" component={ToursMain} /> 
             <Route exact path="/ReviewsMain" component={ReviewsMain} />  
-            <Route exact path="/QuestionsMain" component={QuestionsMain} />         
+            <Route exact path="/QuestionsMain" component={QuestionsMain} />  
+            <Route exact path="/MenuMain" component={MenuMain} />       
           </Switch>
         </div>
       </Router>
