@@ -1,0 +1,14 @@
+.tabs-detail-container {
+  background-color: #fff;
+}
+
+.tab-button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.active-button {
+  border-left: 3px solid #0000ff;
+}
