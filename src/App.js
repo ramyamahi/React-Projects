@@ -7,6 +7,7 @@ import ReviewsMain from "./Projects/3-Reviews/ReviewsMain";
 import QuestionsMain from "./Projects/4-Questions/QuestionsMain";
 import MenuMain from "./Projects/5-menu/MenuMain";
 import TabsMain from "./Projects/6-tabs/TabsMain";
+import SliderMain from "./Projects/7-slider/SliderMain";
 
 class App extends Component {
   state = {    
@@ -35,6 +36,9 @@ class App extends Component {
             <li>
               <NavLink to="/TabsMain">Tabs</NavLink>
             </li>
+            <li>
+              <NavLink to="/SliderMain">Slider</NavLink>
+            </li>
           </ul>
           <hr/>
           <Switch>
@@ -44,7 +48,8 @@ class App extends Component {
             <Route exact path="/ReviewsMain" component={ReviewsMain} />  
             <Route exact path="/QuestionsMain" component={QuestionsMain} />  
             <Route exact path="/MenuMain" component={MenuMain} />  
-            <Route exact path="/TabsMain" component={TabsMain} />     
+            <Route exact path="/TabsMain" component={TabsMain} />  
+            <Route exact path="/SliderMain" component={SliderMain} />   
           </Switch>
         </div>
       </Router>
