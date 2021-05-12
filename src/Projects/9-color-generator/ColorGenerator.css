@@ -1,0 +1,50 @@
+.color-generator {
+  padding: 10px;
+}
+
+.color-header {
+  text-align: center;
+}
+
+input.error {
+  border: 1px solid #ff0000;
+}
+
+.color-input {
+  width: 80px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.color-submit {
+  background-color: #8087eb;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin: 0 20px;
+}
+
+.color-container {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.single-color {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.color-light {
+  color: #fff;
+}
+
+.copy-clipboard {
+  color: #808080;
+}
