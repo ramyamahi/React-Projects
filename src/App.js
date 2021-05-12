@@ -8,6 +8,7 @@ import QuestionsMain from "./Projects/4-Questions/QuestionsMain";
 import MenuMain from "./Projects/5-menu/MenuMain";
 import TabsMain from "./Projects/6-tabs/TabsMain";
 import SliderMain from "./Projects/7-slider/SliderMain";
+import LoremIpsumGenerator from "./Projects/8-loremipsum-generator/LoremIpsumGenerator";
 
 class App extends Component {
   state = {    
@@ -39,6 +40,9 @@ class App extends Component {
             <li>
               <NavLink to="/SliderMain">Slider</NavLink>
             </li>
+            <li>
+              <NavLink to="/LoremIpsumGenerator">Lorem Ipsum Generator</NavLink>
+            </li>
           </ul>
           <hr/>
           <Switch>
@@ -50,6 +54,7 @@ class App extends Component {
             <Route exact path="/MenuMain" component={MenuMain} />  
             <Route exact path="/TabsMain" component={TabsMain} />  
             <Route exact path="/SliderMain" component={SliderMain} />   
+            <Route exact path="/LoremIpsumGenerator" component={LoremIpsumGenerator} />
           </Switch>
         </div>
       </Router>

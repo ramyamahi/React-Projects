@@ -1,0 +1,25 @@
+.text-container {
+  margin: 10px;
+}
+
+.text-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.count-input {
+  width: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.generate-btn {
+  background-color: #8087eb;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin: 0 20px;
+}
