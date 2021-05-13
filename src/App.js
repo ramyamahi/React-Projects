@@ -11,6 +11,7 @@ import SliderMain from "./Projects/7-slider/SliderMain";
 import LoremIpsumGenerator from "./Projects/8-loremipsum-generator/LoremIpsumGenerator";
 import ColorGenerator from "./Projects/9-color-generator/ColorGenerator";
 import GroceryBud from "./Projects/10-grocery-bud/GroceryBud";
+import NavbarMain from "./Projects/11-navbar/NavbarMain";
 
 class App extends Component {
   state = {    
@@ -51,6 +52,9 @@ class App extends Component {
             <li>
               <NavLink to="/GroceryBud">Grocery Bud</NavLink>
             </li>
+            <li>
+              <NavLink to="/Navbar">Navbar</NavLink>
+            </li>
           </ul>
           <hr/>
           <Switch>
@@ -65,6 +69,7 @@ class App extends Component {
             <Route exact path="/LoremIpsumGenerator" component={LoremIpsumGenerator} />
             <Route exact path="/ColorGenerator" component={ColorGenerator} />
             <Route exact path="/GroceryBud" component={GroceryBud} />
+            <Route exact path="/Navbar" component={NavbarMain} />
           </Switch>
         </div>
       </Router>
