@@ -1,0 +1,68 @@
+.type-success {
+  color: green;
+}
+
+.type-danger {
+  color: red;
+}
+
+.grocery-container {
+  width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.grocery-input {
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.grocery-button {
+  background-color: #8087eb;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin: 0 20px;
+}
+
+.clear-button {
+  background-color: #eb866d;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin: 20px;
+}
+
+.list-container {
+  display: flex;
+  align-items: center;
+}
+
+.grocery-title {
+  width: 50%;
+}
+
+.edit-btn,
+.delete-btn {
+  background-color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin: 10px 0;
+}
+
+.edit-btn {
+  color: #008000;
+}
+
+.delete-btn {
+  color: #ff0000;
+}
